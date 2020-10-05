@@ -9,7 +9,7 @@ params = urlencode({'field1':"ousamaalchami@cmail.carleton.ca",'field2':"L2-M-4"
 headers = {"Content-typZZe": "application/x-www-form-urlencoded", "Accept": "text/plain"}
 
 conn = httplib.HTTPConnection("api.thingspeak.com:80")
-#this will try to send the roomtemp to thing speak
+#this will try to send to thing speak
 try:
 
     conn.request("POST", "/update", params, headers)
